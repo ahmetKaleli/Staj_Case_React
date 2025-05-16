@@ -1,11 +1,14 @@
 import './App.css'
+import Filter from './components/Filter'
+import Header from './components/Header'
+import RouterConfig from './routes/RouterConfig'
 
 function App() {
-
-
   return (
     <div>
-      <p className='text-5xl'>Staj Case</p>
+      <Header/>
+      <Filter/>
+      <RouterConfig/>
     </div>
   )
 }

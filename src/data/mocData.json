@@ -1,0 +1,82 @@
+[
+  {
+    "id": "0001",
+    "name": "Push Up",
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "target": "pectorals",
+    "gifUrl": "https://example.com/pushup.gif"
+  },
+  {
+    "id": "0002",
+    "name": "Push Up",
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "target": "pectorals",
+    "gifUrl": "https://example.com/pushup.gif"
+  },
+  {
+    "id": "0003",
+    "name": "Push Up",
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "target": "pectorals",
+    "gifUrl": "https://example.com/pushup.gif"
+  },
+  {
+    "id": "0004",
+    "name": "Push Up",
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "target": "pectorals",
+    "gifUrl": "https://example.com/pushup.gif"
+  },
+  {
+    "id": "0005",
+    "name": "Push Up",
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "target": "pectorals",
+    "gifUrl": "https://example.com/pushup.gif"
+  },
+  {
+    "id": "0006",
+    "name": "Push Up",
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "target": "pectorals",
+    "gifUrl": "https://example.com/pushup.gif"
+  },
+  {
+    "id": "0007",
+    "name": "Push Up",
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "target": "pectorals",
+    "gifUrl": "https://example.com/pushup.gif"
+  },
+  {
+    "id": "0008",
+    "name": "Push Up",
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "target": "pectorals",
+    "gifUrl": "https://example.com/pushup.gif"
+  },
+  {
+    "id": "0009",
+    "name": "Push Up",
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "target": "pectorals",
+    "gifUrl": "https://example.com/pushup.gif"
+  },
+  {
+    "id": "0010",
+    "name": "Push Up",
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "target": "pectorals",
+    "gifUrl": "https://example.com/pushup.gif"
+  }
+]
