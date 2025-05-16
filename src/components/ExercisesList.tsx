@@ -13,7 +13,6 @@ export default function ExercisesList() {
         queryKey: ["exercises"],
         queryFn: fetchData,
         staleTime: Infinity,
-        cacheTime: Infinity,
         refetchOnWindowFocus: false,
         retry: 1 
 

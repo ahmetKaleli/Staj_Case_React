@@ -1,13 +1,14 @@
 import './App.css'
-import Filter from './components/Filter'
 import Header from './components/Header'
 import RouterConfig from './routes/RouterConfig'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   return (
     <div>
+      <ToastContainer/>
       <Header/>
-      <Filter/>
       <RouterConfig/>
     </div>
   )

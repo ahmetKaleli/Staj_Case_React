@@ -1,43 +1,43 @@
 [
   {
     "id": "0001",
-    "name": "Push Up",
+    "name": "Barbell Bench Press",
     "bodyPart": "chest",
-    "equipment": "body weight",
+    "equipment": "barbell",
     "target": "pectorals",
-    "gifUrl": "https://example.com/pushup.gif"
+    "gifUrl": "https://media1.tenor.com/m/jE6gUHstZvsAAAAC/door-smash-door.gif"
   },
   {
     "id": "0002",
-    "name": "Push Up",
-    "bodyPart": "chest",
-    "equipment": "body weight",
-    "target": "pectorals",
-    "gifUrl": "https://example.com/pushup.gif"
+    "name": "Dumbbell Shoulder Press",
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "target": "deltoids",
+    "gifUrl": "https://media1.tenor.com/m/jE6gUHstZvsAAAAC/door-smash-door.gif"
   },
   {
     "id": "0003",
-    "name": "Push Up",
-    "bodyPart": "chest",
-    "equipment": "body weight",
-    "target": "pectorals",
-    "gifUrl": "https://example.com/pushup.gif"
+    "name": "Barbell Back Squat",
+    "bodyPart": "legs",
+    "equipment": "barbell",
+    "target": "quadriceps",
+    "gifUrl": ""
   },
   {
     "id": "0004",
-    "name": "Push Up",
-    "bodyPart": "chest",
-    "equipment": "body weight",
-    "target": "pectorals",
-    "gifUrl": "https://example.com/pushup.gif"
+    "name": "Deadlift",
+    "bodyPart": "back",
+    "equipment": "barbell",
+    "target": "lower back",
+    "gifUrl": ""
   },
   {
     "id": "0005",
-    "name": "Push Up",
-    "bodyPart": "chest",
-    "equipment": "body weight",
-    "target": "pectorals",
-    "gifUrl": "https://example.com/pushup.gif"
+    "name": "Lat Pulldown",
+    "bodyPart": "back",
+    "equipment": "cable",
+    "target": "lats",
+    "gifUrl": ""
   },
   {
     "id": "0006",
@@ -45,38 +45,38 @@
     "bodyPart": "chest",
     "equipment": "body weight",
     "target": "pectorals",
-    "gifUrl": "https://example.com/pushup.gif"
+    "gifUrl": ""
   },
   {
     "id": "0007",
-    "name": "Push Up",
-    "bodyPart": "chest",
-    "equipment": "body weight",
-    "target": "pectorals",
-    "gifUrl": "https://example.com/pushup.gif"
+    "name": "Leg Press",
+    "bodyPart": "legs",
+    "equipment": "machine",
+    "target": "glutes",
+    "gifUrl": ""
   },
   {
     "id": "0008",
-    "name": "Push Up",
-    "bodyPart": "chest",
-    "equipment": "body weight",
-    "target": "pectorals",
-    "gifUrl": "https://example.com/pushup.gif"
+    "name": "Bicep Curl",
+    "bodyPart": "arms",
+    "equipment": "dumbbell",
+    "target": "biceps",
+    "gifUrl": ""
   },
   {
     "id": "0009",
-    "name": "Push Up",
-    "bodyPart": "chest",
-    "equipment": "body weight",
-    "target": "pectorals",
-    "gifUrl": "https://example.com/pushup.gif"
+    "name": "Tricep Pushdown",
+    "bodyPart": "arms",
+    "equipment": "cable",
+    "target": "triceps",
+    "gifUrl": ""
   },
   {
     "id": "0010",
-    "name": "Push Up",
-    "bodyPart": "chest",
+    "name": "Plank",
+    "bodyPart": "core",
     "equipment": "body weight",
-    "target": "pectorals",
-    "gifUrl": "https://example.com/pushup.gif"
+    "target": "abs",
+    "gifUrl": ""
   }
 ]
