@@ -9,6 +9,7 @@ export interface propsData{
     data:Exercise[]
 }
 
+
 export default function Exercises({data}:propsData) {
 
         const handleClick = (exercises:Exercise)=>{
@@ -34,7 +35,7 @@ export default function Exercises({data}:propsData) {
     <div className='w-full mx-auto px-4 '>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center">
         {
-            data && data.map((dt)=>(
+            data.map((dt)=>(
                 <div key={dt.id}>
                     <Card sx={{width:300, height:500, display:'flex', flexDirection:"column", borderRadius:5, marginBottom:5}}>
                         <CardHeader title={dt.name} subheader={dt.bodyPart}/>

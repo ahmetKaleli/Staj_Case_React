@@ -4,7 +4,7 @@ import { fetchData } from '../services/Api'
 import type { Exercise } from '../types/Exercises'
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
-import Exercises from "./Exercises"
+import Filter from "./Filter"
 import Page404 from './404';
 
 export default function ExercisesList() {
@@ -15,11 +15,9 @@ export default function ExercisesList() {
         staleTime: Infinity,
         refetchOnWindowFocus: false,
         retry: 1 
-
     })
 
     const [open, setOpen] = useState<boolean>(true)
-
 
     if (isLoading) {
         return (
@@ -39,8 +37,7 @@ export default function ExercisesList() {
 
     return (
         <div>
-            
-            {data && <Exercises data={data}/>}
+            {data && <Filter data={data}/>}
         </div>
     )
 }

@@ -7,6 +7,3 @@ export interface Exercise{
     target : string
 }
 
-export interface SelectedTarget{
-    target:string
-}
