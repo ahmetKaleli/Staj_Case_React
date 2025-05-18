@@ -18,7 +18,7 @@ export default function ExercisesList() {
 
     })
 
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState<boolean>(true)
 
 
     if (isLoading) {

@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardMedia, IconButton, Typography } from
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { toast } from 'react-toastify'
 
-interface propsData{
+export interface propsData{
     data:Exercise[]
 }
 
@@ -20,13 +20,12 @@ export default function Exercises({data}:propsData) {
                 const updated:Exercise[] = [...save,exercises]
                 localStorage.setItem("favorites",JSON.stringify(updated))
                 toast.success("Favorilere eklendi")
-                console.log("eklendi");    
+                
             }else{
                 toast.dark("zaten favorilerde")
             }
         } catch (error) {
-            toast.error("favorilere eklenirken hata oluştu")
-            console.log(error);
+            toast.error("favorilere eklenirken hata oluştu") 
         }
 
     }

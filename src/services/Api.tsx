@@ -13,10 +13,10 @@ import mocData from "../data/mocData.json"
     }
 
     export const fetchData = async():Promise<Exercise[]>=>{
-         //const res = await axios.get(`${url}/exercises`,options)
-         //console.log(res.data);
-         //return res.data
-        return mocData
+         const res = await axios.get(`${url}/exercises`,options)
+         console.log(res.data);
+         return res.data
+        //return mocData
 
     }
 
