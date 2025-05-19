@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React from 'react'
 import type { Exercise } from '../types/Exercises'
-import mocData from "../data/mocData.json"
 
     const url = import.meta.env.VITE_URL
     const options = {
@@ -16,7 +15,6 @@ import mocData from "../data/mocData.json"
          const res = await axios.get(`${url}/exercises`,options)
          console.log(res.data);
          return res.data
-        //return mocData
-
+        
     }
 

@@ -7,3 +7,6 @@ export interface Exercise{
     target : string
 }
 
+export interface SearchForm{
+    search:string
+}

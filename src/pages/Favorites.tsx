@@ -29,15 +29,21 @@ export default function Favorites() {
             <p className='text-5xl flex items-center justify-center  '>Favori Egzersizler</p>
             {
                 fav.length === 0 ? (<p className='mt-10 text-red-700 text-5xl flex items-center flex-col justify-center'>Favori Egzersiziniz yok
-                                    <img className='rounded-3xl pt-10 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto' src="https://media1.tenor.com/m/jE6gUHstZvsAAAAC/door-smash-door.gif" /></p>) :
+                                    <img className='rounded-3xl pt-10 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto' src="https://media1.tenor.com/m/jE6gUHstZvsAAAAC/door-smash-door.gif" /></p>)
+                    :
                     (
-                        fav && fav.map((f,id)=>(
-                            <div key={id} className=' pt-10 flex flex-item justify-center items-center '>
-                                {f.name}
+                        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center mt-5 mb-5'>
+                         {
+                            fav && fav.map((f,id)=>(
+                            <div key={id} className='flex flex-col items-center border rounded-2xl p-4 w-[250px] bg-white shadow-md'>
+                                <p className='text-lg font-semibold text-center mb-2'>{f.name}</p>
                                 <img src={f.gifUrl} width={250} height={300}></img>
-                                <div><Button onClick={()=>handleDelete(f.id)} color='error'>Sil</Button></div>
+                                <div>
+                                    <div><Button variant='outlined' onClick={()=>handleDelete(f.id)} color='error'>Sil</Button></div>
+                                </div>
                             </div>
-                        ))
+                        ))}
+                        </div>
                     )
             }
         </div>

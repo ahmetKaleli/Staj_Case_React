@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import '../App.css'
 import type { Exercise } from '../types/Exercises'
 import { Card, CardContent, CardHeader, CardMedia, IconButton, Typography } from '@mui/material'
@@ -8,7 +7,6 @@ import { toast } from 'react-toastify'
 export interface propsData{
     data:Exercise[]
 }
-
 
 export default function Exercises({data}:propsData) {
 
@@ -35,9 +33,9 @@ export default function Exercises({data}:propsData) {
     <div className='w-full mx-auto px-4 '>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center">
         {
-            data.map((dt)=>(
+           Array.isArray(data) && data?.map((dt)=>(
                 <div key={dt.id}>
-                    <Card sx={{width:300, height:500, display:'flex', flexDirection:"column", borderRadius:5, marginBottom:5}}>
+                    <Card sx={{width:300, height:500, display:'flex', flexDirection:"column", borderRadius:5, marginBottom:5,boxShadow:8, "&:hover":{boxShadow:20}}}>
                         <CardHeader title={dt.name} subheader={dt.bodyPart}/>
                         <CardMedia
                             component="img"
@@ -53,7 +51,7 @@ export default function Exercises({data}:propsData) {
                             </Typography>
                         </CardContent>
                         <IconButton onClick={()=>handleClick(dt)} aria-label='add to favorites' sx={{"&:hover":{backgroundColor:"transparent"}, marginBottom:1}}>
-                            <FavoriteIcon sx={{color:"#1976d2", transition:"0.4s", "&:hover":{color:"#0d47a1"}}}/>
+                            <FavoriteIcon sx={{color:"gray", transition:"0.4s", "&:hover":{color:"#0d47a1"}}}/>
                         </IconButton>
 
                     </Card>
