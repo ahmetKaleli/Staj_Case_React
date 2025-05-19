@@ -1,5 +1,4 @@
 import axios from 'axios'
-import React from 'react'
 import type { Exercise } from '../types/Exercises'
 
     const url = import.meta.env.VITE_URL

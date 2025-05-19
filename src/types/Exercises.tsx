@@ -4,7 +4,8 @@ export interface Exercise{
     bodyPart:string,
     equipment:string,
     gifUrl:string,
-    target : string
+    target : string,
+    instructions?:string
 }
 
 export interface SearchForm{

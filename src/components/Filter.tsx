@@ -12,8 +12,6 @@ interface FilterProps {
 export default function Filter({ data, selected, setSelected }: FilterProps) {
   const repeat = [...new Set(data.map(da=>da.target))]
   const [open ,setOpen] = useState<boolean>(false)
-  //const [selectedTarget, setSelectedTarget] = useState<string[]>([])
-
 
   const handleClick = ()=>{
     if(!open){
@@ -30,11 +28,6 @@ export default function Filter({ data, selected, setSelected }: FilterProps) {
     :[...prev, target]
     )
   }
-
-  // const filtered:Exercise[] =
-  //   open && selectedTarget.length > 0 
-  //   ? data.filter(dt=> selectedTarget.includes(dt.target))
-  //   : data
 
   return (
     <div >
@@ -61,7 +54,6 @@ export default function Filter({ data, selected, setSelected }: FilterProps) {
           </FormGroup>
         </div>
       }
-    {/* <Exercises data={filtered} /> */}
     </div>
   )
 }
