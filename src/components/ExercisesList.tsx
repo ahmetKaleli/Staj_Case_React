@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import  { useState } from 'react'
+import { useState } from 'react'
 import { fetchData } from '../services/Api'
 import type { Exercise } from '../types/Exercises'
 import Backdrop from '@mui/material/Backdrop';
@@ -22,7 +22,7 @@ export default function ExercisesList({ searchTerm }: PropsExe) {
         retry: 1
     })
 
-    const [open, setOpen] = useState<boolean>(true)
+    const [open] = useState<boolean>(true)
     const [selectedTarget, setSelectedTarget] = useState<string[]>([])
 
     if (isLoading) {
@@ -35,11 +35,13 @@ export default function ExercisesList({ searchTerm }: PropsExe) {
             </Backdrop>
         )
     }
-    if (error || !data) {
-        return (
+
+        if(!data || error ){
+            return (
             <Page404 />
-        )
-    }
+            )
+        }
+
 
     const filteredData = data?.filter((dt) => {
         const a = dt.name.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
